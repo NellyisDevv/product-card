@@ -37,11 +37,11 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 /* Make images esier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
+// img,
+// picture {
+//   max-width: 100%;
+//   display: block;
+// }
 /* Inherit fonts for inputs and buttons */
 input,
 button,
@@ -74,6 +74,9 @@ body {
 ::selection {
   background-color: var(--Dark-grayish-blue);
   color: var(--Cream-color);
+}
+.desktop-break {
+  display: none;
 }
 .perfume-container {
   display: flex;
@@ -160,19 +163,52 @@ body {
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 760px) {
+  .mobile-break {
+    display: none;
+  }
+  // display block is somewhat the opposite to display none
+  .desktop-break {
+    display: block;
+  }
   .perfume-container {
     flex-direction: column;
-    max-width: 375px;
+    max-width: 500px;
     margin-top: 100px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 0px;
     border-top-left-radius: 20px;
     .perfume-picture img {
-      height: 40vh;
-      width: 100%;
+      height: 400px;
+      width: 500px;
+      object-fit: cover;
+      background-position: center;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
       border-bottom-left-radius: 0px;
+    }
+    .perfume-information {
+      padding: 17px;
+      .perfume-p {
+        margin-inline: 15px;
+      }
+      .perfume-info {
+        font-size: 1.2rem;
+      }
+      button {
+        width: 400px;
+        position: relative;
+        right: 15px;
+        img {
+          position: relative;
+          left: 110px;
+          top: 2px;
+        }
+        #text {
+          position: relative;
+          left: 120px;
+          bottom: 3px;
+        }
+      }
     }
   }
 }
