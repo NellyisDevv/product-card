@@ -80,8 +80,8 @@ body {
 }
 .perfume-container {
   display: flex;
-  max-width: 800px;
-  max-height: 600px;
+  max-width: 730px;
+  max-height: 530px;
   margin: auto;
   margin-top: 100px;
   background-color: white;
@@ -89,7 +89,7 @@ body {
   border-bottom-right-radius: 20px;
   .perfume-picture {
     img {
-      max-height: 600px;
+      max-height: 530px;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
     }
@@ -105,7 +105,7 @@ body {
       padding: 1.2rem 0rem 1.2rem 0rem;
       margin-inline: 15px;
     }
-    h2 {
+    h1 {
       font-size: 2.8rem;
       line-height: 1;
       font-family: 'Fraunces', serif;
@@ -127,10 +127,11 @@ body {
     }
     #price {
       font-size: 1rem;
-      margin-inline: 3rem;
-      color: var(--Dark-grayish-blue);
+      margin-inline: 2.2rem;
+      color: rgb(152, 152, 152);
+      font-family: 'Fraunces', serif;
       text-decoration: line-through;
-      text-decoration-thickness: 2px;
+      text-decoration-thickness: 1px;
       position: relative;
       bottom: 10px;
     }
@@ -159,6 +160,8 @@ body {
         position: relative;
         left: 80px;
         bottom: 3px;
+        font-family: 'Montserrat', serif;
+        font-weight: 600;
       }
     }
   }
