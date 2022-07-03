@@ -96,7 +96,7 @@ body {
 .perfume-container {
   display: flex;
   max-width: 755px;
-  max-height: 530px;
+  max-height: 570px;
   margin: auto;
   margin-top: 100px;
   background-color: white;
@@ -104,7 +104,7 @@ body {
   border-bottom-right-radius: 20px;
 }
 .perfume-container .perfume-picture img {
-  max-height: 530px;
+  max-height: 570px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
