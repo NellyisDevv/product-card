@@ -81,14 +81,15 @@ body {
 .perfume-container {
   display: flex;
   max-width: 800px;
+  max-height: 600px;
   margin: auto;
-  margin-top: 300px;
+  margin-top: 100px;
   background-color: white;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   .perfume-picture {
     img {
-      height: 50vh;
+      max-height: 600px;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
     }
@@ -173,6 +174,7 @@ body {
   .perfume-container {
     flex-direction: column;
     max-width: 500px;
+    max-height: 1000px;
     margin-top: 100px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 0px;
